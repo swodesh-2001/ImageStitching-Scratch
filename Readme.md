@@ -92,6 +92,7 @@ There are `9 unknown and 8 degree of freedom`. Thus we need minimum of 4 matchin
 For a given pair i of corresponding point :
 
 ```math
+\begin{aligned}
 x_{d}^{(i)} = \frac{h_{11}*x + h_{11}*y + h_{12}}{h_{31}*x + h_{32}*y + h_{33}}
 \\
 \;
@@ -132,13 +133,13 @@ h_{33} \\
 0 \\
 0 \\
 \end{bmatrix}
-
+\end{aligned}
 ```
 
 Now Combining all the points we have :
 
 ```math
-
+\begin{aligned}
 \begin{bmatrix}
 x_s^{(i)} & y_s^{(i)} & 1 & 0 & 0 & 0 & -x_d^{(i)} * x_s^{(i)} & -x_d^{(i)} * y_s^{(i)} & -x_d^{(i)} \\
 0 & 0 & 0 & x_s^{(i)} & y_s^{(i)} & 1 & -y_d^{(i)} * x_s^{(i)} & -y_d^{(i)} * y_s^{(i)} & -y_d^{(i)}  \\ 
@@ -181,7 +182,7 @@ Ah = 0 \text{ such that } ||h||^2 = 1
 \text{Eigen Vector corresponding to smallest eigen value of }
 (A^T .A)
 
-
+\end{aligned}
 ```
 
 For the above two images, the homography matrix is obtained as this
